@@ -149,7 +149,7 @@ float dataToRangedSingle(float min, float max, int numberOfBits, QByteArray data
     return (min + (num4 * num));
 }
 
-QByteArray rangedSingleToData(float value, float min, float max, int numberOfBits)
+/*QByteArray rangedSingleToData(float value, float min, float max, int numberOfBits)
 {
     QByteArray data;
     float num = max - min;
@@ -180,7 +180,7 @@ QByteArray rangedSingleToData(float value, float min, float max, int numberOfBit
     data += (unsigned char)source>>24;
 
     return data;
-}
+}*/
 
 uint8_t dataToUint8(QByteArray data)
 {

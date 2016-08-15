@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\Player.o
+./release\Room.o
+./release\ProcessUdp.o
+./release\Server.o
+./release\MasterServer.o
+./release\serialize.o
+./release\DataType.o
+./release\moc_Room.o
+./release\moc_Server.o
+);

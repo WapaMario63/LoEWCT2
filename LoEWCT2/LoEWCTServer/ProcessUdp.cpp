@@ -1,5 +1,6 @@
 #include "LoEWCTServer/Server.h"
 #include "Utilities/serialize.h"
+#include "LoEWCTServer/MessageMgr.h"
 
 void Server::udpProcessPendingDatagram()
 {
@@ -29,20 +30,6 @@ void Server::udpProcessPendingDatagram()
             }
         }
 
-        // Add Player
-        if ((unsigned char)datagram[0]==MsgConnect && (unsigned char)datagram[1]==0
-                && (unsigned char)datagram[2]==0 && datagram.size()>=22)
-        {
-            QString name = dataToString(datagram.right(datagram.size()-22));
-            int nameFullSize = getVUint32Size(datagram.right(datagram.size()-22))+name.size();
-            QString sesskey = dataToString(datagram.right(datagram.size()-22-nameFullSize));
 
-            bool isSessKeyValid = true;
-
-            if (isSessKeyValid)
-            {
-
-            }
-        }
     }
 }

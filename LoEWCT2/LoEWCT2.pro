@@ -11,7 +11,8 @@ SOURCES += \
     LoEWCTServer/Server.cpp \
     LoEWCT/MasterServer.cpp \
     Utilities/serialize.cpp \
-    Utilities/DataType.cpp
+    Utilities/DataType.cpp \
+    LoEWCTServer/MessageMgr.cpp
 
 HEADERS += \
     MessageInfo.h \
@@ -20,4 +21,5 @@ HEADERS += \
     LoEWCTServer/Server.h \
     LoEWCT/MasterServer.h \
     Utilities/serialize.h \
-    Utilities/DataType.h
+    Utilities/DataType.h \
+    LoEWCTServer/MessageMgr.h
