@@ -1,25 +1,28 @@
-QT += core network
+QT += core network gui widgets
 
 CONFIG += console
 CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    Player/Player.cpp \
-    LoEWCTRoom/Room.cpp \
-    LoEWCTServer/ProcessUdp.cpp \
-    LoEWCTServer/Server.cpp \
-    LoEWCT/MasterServer.cpp \
     Utilities/serialize.cpp \
     Utilities/DataType.cpp \
-    LoEWCTServer/MessageMgr.cpp
+    Server.cpp \
+    Servers/MasterServer.cpp \
+    Players/Player.cpp \
+    Players/Pony.cpp \
+    Servers/MapServer.cpp \
+    Servers/RoomServer.cpp
 
 HEADERS += \
     MessageInfo.h \
-    Player/Player.h \
-    LoEWCTRoom/Room.h \
-    LoEWCTServer/Server.h \
-    LoEWCT/MasterServer.h \
     Utilities/serialize.h \
     Utilities/DataType.h \
-    LoEWCTServer/MessageMgr.h
+    Server.h \
+    Servers/MasterServer.h \
+    Players/Player.h \
+    Players/Pony.h \
+    Servers/MapServer.h \
+    Servers/RoomServer.h
+
+FORMS +=
