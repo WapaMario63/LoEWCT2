@@ -1,5 +1,5 @@
 # LoEWCT2
-The successor  to the [LoEWCT] Legends of Equestria Private Server, built from the ground up instead of being entirely based off mlkj's private server.
+The successor  to the [LoEWCT] Legends of Equestria Private Server, built from the ground up instead of being entirely based off mlkj's private server (even though some code from it is still being used, such as ```dataType.h/.cpp```, ```serialize.h/.cpp``` and some parts of the ```processPendingDatagrams()``` functions).
 
 This Private Server mainly aims to recreate some necesary parts of how PNet2 works with the newer versions of LoE in C++ using the Qt Framework.
 
